@@ -138,7 +138,7 @@ static ZXSingletonPlayer *_instance = nil;
 
 - (void)setSourceFromData:(NSData *)audioData error:(NSError *)error {
     
-    [self setSourceFromData:audioData loops:1 error:error];
+    [self setSourceFromData:audioData loops:0 error:error];
 }
 
 - (void)setSourceFromData:(NSData *)audioData loops:(NSInteger)loops error:(NSError *)error {
@@ -165,7 +165,7 @@ static ZXSingletonPlayer *_instance = nil;
 
 - (void)setSourceFromFile:(NSString *)fileURL error:(NSError *)error {
     
-    [self setSourceFromFile:fileURL loops:1 error:error];
+    [self setSourceFromFile:fileURL loops:0 error:error];
 }
 
 - (void)setSourceFromFile:(NSString *)fileURL loops:(NSInteger)loops error:(NSError *)error {

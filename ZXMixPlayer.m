@@ -179,7 +179,7 @@ static ZXMixPlayer *_instance = nil;
 
 - (void)setSourceFromFiles:(NSArray<NSString *> *)fileURLs {
     
-    [self setSourceFromFiles:fileURLs loops:1];
+    [self setSourceFromFiles:fileURLs loops:0];
 }
 
 - (void)setSourceFromFiles:(NSArray<NSString *> *)fileURLs loops:(NSInteger)loops {
@@ -212,7 +212,7 @@ static ZXMixPlayer *_instance = nil;
 
 - (void)setSourceFromDatas:(NSArray<NSData *> *)audioDatas {
     
-    [self setSourceFromDatas:audioDatas loops:1];
+    [self setSourceFromDatas:audioDatas loops:0];
 }
 
 - (void)setSourceFromDatas:(NSArray<NSData *> *)audioDatas loops:(NSInteger)loops {
